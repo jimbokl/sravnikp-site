@@ -2,6 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#146c57" />
@@ -10,8 +14,8 @@
       content="Как СравниКП работает с файлами, локальным хранилищем браузера и техническими сетевыми данными."
     />
     <link rel="canonical" href="https://sravnikp.ru/privacy.html" />
-    <link rel="icon" href="./releases/20260714T081425Z-290885f00677/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./releases/20260714T081425Z-290885f00677/styles.css" />
+    <link rel="icon" href="./releases/20260714T090751Z-290885f00677/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./releases/20260714T090751Z-290885f00677/styles.css" />
     <title>Конфиденциальность — СравниКП</title>
   </head>
   <body class="antialiased selection:bg-brand-soft selection:text-brand-dark">
@@ -74,8 +78,10 @@
           не связывает такие запросы с содержимым коммерческих предложений.
         </p>
         <p>
-          Статические файлы и HTTPS-шлюз размещены в российской инфраструктуре Cloud.ru. Техническая обработка
-          на стороне провайдера выполняется по его правилам безопасности и конфиденциальности.
+          Публичная страница и HTTPS размещены на GitHub Pages, а резервное зеркало релизов — в российском
+          Object Storage Cloud.ru. При открытии сайта технические сетевые данные обрабатываются этими
+          инфраструктурными провайдерами по их правилам безопасности и конфиденциальности. Содержимое выбранных
+          коммерческих предложений ни одному из них не передаётся.
         </p>
       </section>
 
