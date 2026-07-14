@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#146c57" />
+    <meta name="application-name" content="СравниКП" />
+    <meta
+      name="description"
+      content="СравниКП сводит коммерческие предложения поставщиков в проверяемую сравнительную таблицу прямо в браузере."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="СравниКП" />
+    <meta property="og:title" content="СравниКП — сравнение предложений поставщиков" />
+    <meta property="og:description" content="Сведите КП поставщиков в проверяемую таблицу прямо в браузере." />
+    <meta property="og:url" content="https://sravnikp.ru/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="СравниКП — сравнение предложений поставщиков" />
+    <meta name="twitter:description" content="Сведите КП поставщиков в проверяемую таблицу прямо в браузере." />
+    <link rel="canonical" href="https://sravnikp.ru/" />
+    <link rel="alternate" hreflang="ru" href="https://sravnikp.ru/" />
+    <link rel="icon" href="./releases/20260714T081425Z-290885f00677/favicon.svg" type="image/svg+xml" />
+    <title>Сравнение коммерческих предложений онлайн — СравниКП</title>
+    <link rel="stylesheet" href="./releases/20260714T081425Z-290885f00677/styles.css" />
+      <meta name="sravnikp-release" content="20260714T081425Z-290885f00677" />
+  </head>
+  <body class="antialiased selection:bg-brand-soft selection:text-brand-dark">
+    <a class="skip-link" href="#workspace">Перейти к рабочей области</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="СравниКП — на главную">
+        <span class="brand-mark" aria-hidden="true">СК</span>
+        <span>СравниКП</span>
+      </a>
+      <nav aria-label="Основная навигация">
+        <a href="#workspace">Сравнить КП</a>
+        <a href="#how">Как работает</a>
+      </nav>
+      <span class="privacy-pill"><span class="privacy-dot" aria-hidden="true"></span>Локально в браузере</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Конкурентный лист без ручной таблицы</p>
+          <h1>Сравните предложения поставщиков за несколько минут</h1>
+          <p class="hero-lead">
+            Загрузите прайсы и КП. СравниКП сопоставит разные названия товаров,
+            приведёт цены с НДС и покажет лучшее предложение по каждой позиции.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#workspace">Сравнить бесплатно</a>
+            <button class="button ghost" id="hero-demo-button" type="button">Посмотреть пример</button>
+          </div>
+          <ul class="trust-list" aria-label="Преимущества">
+            <li>Файлы не загружаются на сервер</li>
+            <li>Каждая цифра связана с исходной строкой</li>
+            <li>Неуверенные совпадения отмечены</li>
+          </ul>
+        </div>
+          <div class="hero-proof" role="region" aria-label="Пример результата сравнения">
+          <div class="proof-head">
+            <div>
+              <span class="proof-label">Пример экономии</span>
+              <strong>38 420 ₽</strong>
+            </div>
+            <span class="status good">3 КП сравнено</span>
+          </div>
+          <div class="mini-table" role="presentation">
+            <div class="mini-row mini-header"><span>Позиция</span><span>Альфа</span><span>Бета</span><span>Выбор</span></div>
+            <div class="mini-row"><span>Клапан DN20</span><span>1 240 ₽</span><span>1 080 ₽</span><span class="winner">Бета</span></div>
+            <div class="mini-row"><span>Манометр 10 бар</span><span>890 ₽</span><span>920 ₽</span><span class="winner">Альфа</span></div>
+            <div class="mini-row"><span>Насос 25/60</span><span>8 490 ₽</span><span>7 950 ₽</span><span class="winner">Бета</span></div>
+          </div>
+          <div class="proof-note">
+            <span class="confidence-icon">✓</span>
+            <span><strong>Проверяемый результат</strong><br />файл и строка указаны под каждой ценой</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace-section" id="workspace">
+        <div class="section-heading">
+          <p class="eyebrow">Рабочая область</p>
+          <h2>Добавьте минимум два предложения</h2>
+          <p>Поддерживаются таблицы Excel и OpenDocument, Word DOCX с таблицами, CSV и TSV, текстовые PDF и данные распознавания DocForge в JSON.</p>
+        </div>
+
+        <div class="workspace-shell">
+          <div class="engine-bar">
+            <span><span class="engine-light" id="engine-light" aria-hidden="true"></span><span id="engine-status" role="status" aria-live="polite">Запускаем локальный движок…</span></span>
+            <span class="engine-meta">
+              <span class="storage-status" id="storage-status" role="status" aria-live="polite">Автосохранение локально</span>
+              <span class="engine-version" id="engine-version"></span>
+            </span>
+          </div>
+
+          <div
+            class="drop-zone"
+            id="drop-zone"
+            role="button"
+            tabindex="0"
+            aria-label="Выбрать коммерческие предложения"
+            aria-describedby="drop-instructions drop-limits"
+          >
+            <input id="file-input" type="file" multiple accept=".xlsx,.xls,.xlsm,.xlsb,.ods,.docx,.pdf,.csv,.tsv,.txt,.json,text/csv,text/tab-separated-values,application/json,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden />
+            <div class="drop-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <strong>Перетащите сюда файлы КП</strong>
+            <span id="drop-instructions">или нажмите, чтобы выбрать несколько файлов</span>
+            <small id="drop-limits">Excel · DOCX · PDF · CSV · до 10 файлов по 25 МБ · только на вашем устройстве</small>
+          </div>
+
+          <div class="quote-list" id="quote-list" aria-live="polite"></div>
+
+          <div class="workspace-actions">
+            <div class="secondary-actions">
+              <button class="button text-button" id="demo-button" type="button">Загрузить пример</button>
+              <button class="button text-button danger-text" id="clear-button" type="button" hidden>Очистить</button>
+            </div>
+            <button class="button primary compare-button" id="compare-button" type="button" disabled>
+              Сравнить предложения
+              <span class="button-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="inline-error" id="inline-error" role="alert" hidden></div>
+        </div>
+      </section>
+
+      <section class="results-section" id="results" hidden>
+        <div class="sr-only" id="result-status" role="status" aria-live="polite" aria-atomic="true"></div>
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow">Готовый конкурентный лист</p>
+            <h2 id="results-title">Результат сравнения</h2>
+          </div>
+          <button class="button secondary" id="export-button" type="button">Скачать CSV</button>
+        </div>
+
+        <div class="summary-grid" id="summary-grid" role="region" aria-label="Итоги сравнения"></div>
+        <div class="result-warnings" id="result-warnings" role="alert" hidden></div>
+
+        <p class="table-scroll-hint" id="table-scroll-hint">Прокрутите таблицу по горизонтали, чтобы увидеть все предложения.</p>
+        <div
+          class="table-shell"
+          tabindex="0"
+          role="region"
+          aria-label="Таблица сравнения предложений"
+          aria-describedby="table-scroll-hint table-footnote"
+        >
+          <table class="comparison-table" aria-labelledby="results-title">
+            <caption class="sr-only">Цены поставщиков по сопоставленным товарным позициям</caption>
+            <thead id="result-head"></thead>
+            <tbody id="result-body"></tbody>
+          </table>
+        </div>
+        <p class="table-footnote" id="table-footnote">
+          Цены без НДС автоматически увеличиваются на ставку, указанную у файла. Разные валюты и единицы измерения не сравниваются автоматически.
+        </p>
+      </section>
+
+      <section class="how-section" id="how">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Как это работает</p>
+          <h2>Результат можно проверить, а не просто поверить ему</h2>
+        </div>
+        <div class="steps-grid">
+          <article>
+            <span class="step-number">01</span>
+            <h3>DocForge восстанавливает таблицу</h3>
+            <p>OCR-слова и координаты превращаются в строки и колонки с оценкой уверенности.</p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>Локальное ядро сопоставляет позиции</h3>
+            <p>Сначала артикул, затем нормализованное название. Конфликты не склеиваются молча.</p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>Вы выбираете поставщика</h3>
+            <p>Видны цена с НДС, срок, разброс и ссылка на исходную строку каждого предложения.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top" aria-label="СравниКП — наверх"><span class="brand-mark" aria-hidden="true">СК</span><span>СравниКП</span></a>
+      <p>sravnikp.ru · Коммерческие предложения остаются на вашем устройстве.</p>
+      <div class="footer-meta">
+        <nav class="footer-links" aria-label="Документы сервиса">
+          <a href="/privacy.html">Конфиденциальность</a>
+          <a href="/terms.html">Условия использования</a>
+        </nav>
+        <span>Версия 0.3</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./releases/20260714T081425Z-290885f00677/app.js"></script>
+  </body>
+</html>

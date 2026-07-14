@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "release": "20260714T081425Z-290885f00677",
+  "built_at": "2026-07-14T08:14:25Z",
+  "wasm_sha256": "68cd43b352934cd3365a1444b90c1d784f658d124ff22811baa66c440e21c5ee",
+  "source_revision": "32aea834bcf76786f6924fb7424c5f775f2d2e05",
+  "source_dirty": false,
+  "rust_version": "1.97.0",
+  "wasm_bindgen_version": "0.2.123",
+  "node_version": "25.9.0"
+}
