@@ -1,0 +1,21 @@
+.audit-flag.high p {
+  color: #53625e;
+}
+
+.faq-section .audit-flag {
+  margin-top: 28px;
+}
+
+.faq-section .audit-flag ul {
+  padding-left: 18px;
+  margin: 11px 0 0;
+  color: #53625e;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.faq-section .audit-flag a {
+  color: #0e5745;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

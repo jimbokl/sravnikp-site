@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "release": "20260714T123729Z-c6df36c7fd55",
-  "built_at": "2026-07-14T12:37:29Z",
-  "wasm_sha256": "59d5084604bd4b11a85a90df9c8482574945d1b75dab9a4c5e421ce4fb337847",
-  "source_revision": "18f4e864cd9bdddd3aaf19458f413c516b2925c8",
+  "release": "20260719T084856Z-417cd15460d9",
+  "built_at": "2026-07-19T08:48:57Z",
+  "wasm_sha256": "68cd43b352934cd3365a1444b90c1d784f658d124ff22811baa66c440e21c5ee",
+  "source_revision": "516be2aa5189f4ec4f001f09564d5c6dcd93e6ea",
   "source_dirty": false,
   "rust_version": "1.97.0",
   "wasm_bindgen_version": "0.2.123",
-  "node_version": "20.20.2"
+  "node_version": "25.9.0"
 }
