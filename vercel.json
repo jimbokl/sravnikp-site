@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/remont-avtomobilya",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/remont-avtomobilya/",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
