@@ -1,9 +1,9 @@
 {
   "status": "ok",
-  "release": "20260724T084812Z-72207ba98adc",
-  "built_at": "2026-07-24T08:48:13Z",
+  "release": "20260724T094534Z-80990df60ddb",
+  "built_at": "2026-07-24T09:45:40Z",
   "wasm_sha256": "68cd43b352934cd3365a1444b90c1d784f658d124ff22811baa66c440e21c5ee",
-  "source_revision": "18ff512da7f04aeec6c042f283b1b2dc68246f50",
+  "source_revision": "bd0be8e60d315c32c2386a1bf84e94b184162ff2",
   "source_dirty": false,
   "rust_version": "1.97.0",
   "wasm_bindgen_version": "0.2.123",
